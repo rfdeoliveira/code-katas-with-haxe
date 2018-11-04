@@ -1,7 +1,7 @@
 class FizzBuzzerTest extends haxe.unit.TestCase {
     var robot:FizzBuzzer;
 
-    override function setup(){
+    override function setup() {
         robot = new FizzBuzzer();
     }
 
