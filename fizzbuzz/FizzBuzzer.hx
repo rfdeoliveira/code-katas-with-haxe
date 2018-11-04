@@ -35,10 +35,12 @@ class FizzBuzzer {
     static function main() {
         // Creates a new FizzBuzzer Robot
         var robot = new FizzBuzzer();
+        var number = 0;
 
-        // Makes it play from position 1 to 100
-        for (i in 1...101) {
-            trace('$i -> ' + robot.say(i));
+        while (number != null) {
+            var userInput = Sys.stdin().readLine();
+            number = Std.parseInt(userInput);
+            trace(robot.say(number));
         }
     }
 }
